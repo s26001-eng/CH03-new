@@ -1,0 +1,60 @@
+body {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 16px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+h1 {
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2b7bb9;
+}
+
+/* 項目名は1行ずつ */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* 入力欄共通の装飾 */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;    /* padding を含めて 100% にする */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* 同意のチェックは太字にしない */
+label.check {
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #2b7bb9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>お問い合わせ</h1>
+    <p>ご質問がありましたらお気軽にご連絡ください。</p>
+
+    <!-- action＝送り先 / method＝送り方 -->
+    <form action="thanks.html" method="get">
+        <label for="name">お名前</label>
+        <input id="name" type="text" name="name" placeholder="例：大本真奈美" required>
+
+        <label for="email">メールアドレス</label>
+        <input id="email" type="email" name="email" placeholder="例：example@mail.com" required>
+
+        <label for="question">ご質問内容</label>
+        <select id="question" name="question">
+            <option value="item">商品の質問</option>
+            <option value="shop">お店について</option>
+            <option value="other">その他</option>
+        </select>
+
+        <label for="message">ご意見・ご質問</label>
+        <textarea id="message" name="message"></textarea>
+
+        <label class="check">
+            <input type="checkbox" name="agree" value="yes" required> 個人情報の取り扱いに同意する
+        </label>
+
+        <button type="submit">送信する</button>
+    </form>
+</body>
+</html>
